@@ -23,30 +23,12 @@ const Nav = () => {
       </a>
       
       <a
-        href="#about"
-        onClick={() => setActiveNow('#about')}
-        className={activeNow === '#about' ? 'active' : ''}
-        title='Sobre'
-      >
-        <AiOutlineUser />
-      </a>
-
-      <a
         href="#experience"
         onClick={() => setActiveNow('#experience')}
         className={activeNow === '#experience' ? 'active' : ''}
         title='Experiência'
       >
         <BiBook />
-      </a>
-
-      <a
-        href="#services"
-        onClick={() => setActiveNow('#services')}
-        className={activeNow === '#services' ? 'active' : ''}
-        title='Serviços'
-      >
-        <RiServiceLine />
       </a>
 
       <a

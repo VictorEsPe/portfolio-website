@@ -1,10 +1,10 @@
-.experience__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
+ .experience__container {
+  display: flex;
+  justify-content: center;
+ }
 
 .experience__container > div {
+  width: var( --container-width-lg);
   background-color: var(--color-bg-variant);
   padding: 2.4rem 5rem;
   border-radius: 2rem;
@@ -32,6 +32,7 @@
 .experience__details {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 
 .experience__details-icon {

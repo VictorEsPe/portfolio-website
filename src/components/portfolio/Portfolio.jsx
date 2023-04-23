@@ -1,55 +1,47 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
+import IMG1 from '../../assets/rdr-portfolio.png'
+import IMG2 from '../../assets/tiktok-clone.png'
+import IMG3 from '../../assets/pagina-notificacao.png'
+import IMG4 from '../../assets/formulario-login.png'
+import IMG5 from '../../assets/componente-avaliacao.png'
 
 const portfolioData = [
   {
     id: 1,
     image: IMG1,
-    title: 'Título',
-    github: 'https://github.com/',
-    demo: 'https://github.com/',
+    title: 'Carrossel Red Dead Redemption 2',
+    github: 'https://github.com/VictorEsPe/Carrossel-Red-Dead-Redemption',
+    demo: 'https://victorespe.github.io/Carrossel-Red-Dead-Redemption/',
   },
   {
     id: 2,
     image: IMG2,
-    title: 'Título',
-    github: 'https://github.com/',
-    demo: 'https://github.com/',
+    title: 'Clone do TikTok',
+    github: 'https://github.com/VictorEsPe/tiktok-project',
+    demo: 'https://tiktok---jornada-376e4.web.app/',
   },
   {
     id: 3,
     image: IMG3,
-    title: 'Título',
-    github: 'https://github.com/',
-    demo: 'https://github.com/',
+    title: 'Página de notificações',
+    github: 'https://github.com/VictorEsPe/Pagina-de-notificacoes',
+    demo: 'https://victorespe.github.io/Pagina-de-notificacoes/',
   },
   {
     id: 4,
     image: IMG4,
-    title: 'Título',
-    github: 'https://github.com/',
+    title: 'Formulário de login',
+    github: 'https://github.com/VictorEsPe/formulario-de-login',
     demo: 'https://github.com/',
   },
   {
     id: 5,
     image: IMG5,
-    title: 'Título',
-    github: 'https://github.com/',
-    demo: 'https://github.com/',
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: 'Título',
-    github: 'https://github.com/',
-    demo: 'https://github.com/',
-  },
+    title: 'Componente de avaliação interativo',
+    github: 'https://github.com/VictorEsPe/Componente-de-avaliacao-interativo',
+    demo: 'https://victorespe.github.io/Componente-de-avaliacao-interativo/',
+  }
 ]
 
 const Portfolio = () => {

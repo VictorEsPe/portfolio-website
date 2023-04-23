@@ -1,8 +1,7 @@
 import React from 'react'
 import './footer.css'
-import { FaFacebookF } from 'react-icons/fa'
-import { FaInstagram } from 'react-icons/fa'
-import { FaTwitter } from 'react-icons/fa'
+import {BsLinkedin} from 'react-icons/bs'
+import {BsGithub} from 'react-icons/bs'
 
 const Footer = () => {
   return (
@@ -16,19 +15,10 @@ const Footer = () => {
           <a href="#">Home</a>
         </li>
         <li>
-          <a href="#about">Sobre</a>
-        </li>
-        <li>
-          <a href="#experience">Experiência</a>
-        </li>
-        <li>
-          <a href="#services">Serviços</a>
+          <a href="#experience">Conhecimentos</a>
         </li>
         <li>
           <a href="#portfolio">Portfólio</a>
-        </li>
-        <li>
-          <a href="#testimonials">Depoimentos</a>
         </li>
         <li>
           <a href="#contact">Contato</a>
@@ -36,14 +26,11 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://facebook.com">
-          <FaFacebookF />
+        <a href="https://github.com/VictorEsPe" target='_blank'>
+          <BsGithub />
         </a>
-        <a href="https://instagram.com">
-          <FaInstagram />
-        </a>
-        <a href="https://twitter.com">
-          <FaTwitter />
+        <a href="https://www.linkedin.com/in/victor-estevam-44140b239/" target='_blank'>
+          <BsLinkedin />
         </a>
       </div>
     </footer>
