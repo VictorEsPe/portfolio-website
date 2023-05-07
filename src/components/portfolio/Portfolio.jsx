@@ -5,6 +5,7 @@ import IMG2 from '../../assets/tiktok-clone.png'
 import IMG3 from '../../assets/pagina-notificacao.png'
 import IMG4 from '../../assets/formulario-login.png'
 import IMG5 from '../../assets/componente-avaliacao.png'
+import IMG6 from '../../assets/calculadora-idade.png'
 
 const portfolioData = [
   {
@@ -41,6 +42,14 @@ const portfolioData = [
     title: 'Componente de avaliação interativo',
     github: 'https://github.com/VictorEsPe/Componente-de-avaliacao-interativo',
     demo: 'https://victorespe.github.io/Componente-de-avaliacao-interativo/',
+  },
+
+  {
+    id: 6,
+    image: IMG6,
+    title: 'Calculadora de idade',
+    github: 'https://github.com/VictorEsPe/calculadora-de-idade',
+    demo: 'https://victorespe.github.io/calculadora-de-idade/',
   }
 ]
 
