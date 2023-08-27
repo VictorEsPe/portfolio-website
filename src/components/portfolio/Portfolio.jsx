@@ -6,6 +6,7 @@ import IMG3 from '../../assets/pagina-notificacao.png'
 import IMG4 from '../../assets/formulario-login.png'
 import IMG5 from '../../assets/componente-avaliacao.png'
 import IMG6 from '../../assets/calculadora-idade.png'
+import IMG7 from '../../assets/Advice-generator.png'
 
 const portfolioData = [
   {
@@ -50,7 +51,15 @@ const portfolioData = [
     title: 'Calculadora de idade',
     github: 'https://github.com/VictorEsPe/calculadora-de-idade',
     demo: 'https://victorespe.github.io/calculadora-de-idade/',
-  }
+  },
+
+  {
+    id: 7,
+    image: IMG7,
+    title: 'Gerador de conselhos aleatórios',
+    github: 'https://github.com/VictorEsPe/Advice-generator-API',
+    demo: 'https://victorespe.github.io/Advice-generator-API/',
+  },
 ]
 
 const Portfolio = () => {
