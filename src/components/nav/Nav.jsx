@@ -1,55 +1,55 @@
-import React from 'react'
-import { useState } from 'react'
-import './nav.css'
-import { AiOutlineHome } from 'react-icons/ai'
-import { AiOutlineUser } from 'react-icons/ai'
-import { BiBook } from 'react-icons/bi'
-import { RiServiceLine } from 'react-icons/ri'
-import { AiOutlineFolderOpen } from 'react-icons/ai'
-import { AiOutlineMessage } from 'react-icons/ai'
+import React from 'react';
+import { useState, useEffect } from 'react';
+import './nav.css';
+import sectionsList from '../../utilities/sectionList';
+import iconsDictionarie from '../../utilities/iconsDictionarie';
+
+// hook personalizado para destacar dinâmicamente a seção da página na barra de navegação
+function useScrollWatcher(sections) {
+  const [activeSection, setActiveSection] = useState('home');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Ajusta para a altura visível da janela
+        const scrollPosition = window.scrollY + window.innerHeight / 2; 
+        
+        sections.forEach(sectionId => {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    setActiveSection(sectionId);
+                }
+            }
+        });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+}, [sections]);
+
+  return activeSection;
+}
 
 const Nav = () => {
-  const [activeNow, setActiveNow] = useState('#')
+  const activeSection = useScrollWatcher(sectionsList)
+  
 
   return (
     <nav>
-      <a
-        href="#"
-        className={activeNow === '#' ? 'active' : ''}
-        onClick={() => setActiveNow('#')}
-        title='Home'
-      >
-        <AiOutlineHome />
-      </a>
+      {sectionsList.map(section => (
+        <a 
+        href={`#${section}`}
+        className={activeSection === section ? 'active' : ''}
+        >
+          {iconsDictionarie[section]}
+        </a>
+      ))}
       
-      <a
-        href="#experience"
-        onClick={() => setActiveNow('#experience')}
-        className={activeNow === '#experience' ? 'active' : ''}
-        title='Experiência'
-      >
-        <BiBook />
-      </a>
-
-      <a
-        href="#portfolio"
-        onClick={() => setActiveNow('#portfolio')}
-        className={activeNow === '#portfolio' ? 'active' : ''}
-        title='Portfolio'
-      >
-        <AiOutlineFolderOpen />
-      </a>
-
-      <a
-        href="#contact"
-        onClick={() => setActiveNow('#contact')}
-        className={activeNow === '#contact' ? 'active' : ''}
-        title='Contato'
-      >
-        <AiOutlineMessage />
-      </a>
     </nav>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;
