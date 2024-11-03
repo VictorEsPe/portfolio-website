@@ -36,7 +36,7 @@ const Experience = () => {
 
               <div>
                 <h4>JavaScript</h4>
-                <small className="text-light">Básico</small>
+                <small className="text-light">Avançado</small>
               </div>
             </article>
 
@@ -45,7 +45,7 @@ const Experience = () => {
 
               <div>
                 <h4>React JS</h4>
-                <small className="text-light">Básico</small>
+                <small className="text-light">Intermediário</small>
               </div>
             </article>
           </div>
