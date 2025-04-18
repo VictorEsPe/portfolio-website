@@ -39,10 +39,12 @@ const Nav = () => {
 
   return (
     <nav>
-      {sectionsList.map(section => (
+      {sectionsList.map((section, index) => (
         <a 
         href={`#${section}`}
         className={activeSection === section ? 'active' : ''}
+        title={sectionsList[index]}
+        key={index}
         >
           {iconsDictionarie[section]}
         </a>
