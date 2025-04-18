@@ -1,9 +1,9 @@
-import rdrCarousel from '../assets/rdr-portfolio.png'
-import loginForm from '../assets/formulario-login.png'
-import ageCalculator from '../assets/calculadora-idade.png'
-import adviceGenerator from '../assets/Advice-generator.png'
-import audiobook from '../assets/audiobook-player.png'
-import pokedex from '../assets/pokedex.png'
+import rdrCarousel from '../assets/previews/rdr-portfolio.png'
+import loginForm from '../assets/previews/formulario-login.png'
+import ageCalculator from '../assets/previews/calculadora-idade.png'
+import adviceGenerator from '../assets/previews/Advice-generator.png'
+import audiobook from '../assets/previews/audiobook-player.png'
+import pokedex from '../assets/previews/pokedex.png'
 
 const portfolioData = [
   {
