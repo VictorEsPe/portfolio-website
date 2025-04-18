@@ -35,14 +35,6 @@ const Contact = () => {
           </article>
 
           <article className='contact__option'>
-            <RiMessengerLine className='contact__option-icon'/>
-            <h4>Messenger</h4>
-            <h5>Victor Estevam Pereira</h5>
-
-            <a href="https://m.me/victor.estevam.3139" target='_blank'>Envie uma mensagem</a>
-          </article>
-
-          <article className='contact__option'>
             <BsWhatsapp className='contact__option-icon'/>
             <h4>Whatsapp</h4>
             <h5>Victor Estevam Pereira</h5>
